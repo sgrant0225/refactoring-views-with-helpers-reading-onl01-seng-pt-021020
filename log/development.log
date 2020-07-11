@@ -110,3 +110,13 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/posts/1" for 69.255.80.114 at 2020-07-11 21:47:40 +0000
+Cannot render console from 69.255.80.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
